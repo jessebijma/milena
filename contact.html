@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/components/contact.scss">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+</head>
+
+<body>
+    <div id="contact-container">
+        <div id="contact-left">
+            <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.216853080961!2d4.88358461556491!3d52.38461907978879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609cd945b108b%3A0xfc6459b49f4a893c!2sTussen+de+Bogen+59%2C+1013+JB+Amsterdam!5e0!3m2!1snl!2snl!4v1516029376856" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        <div id="contact-right">
+            <h1 id="title" style="padding-left: 50px;">Neem contact op</h1>
+            <div id="contact-wrapper">
+                <div id="input-field">
+                    <input placeholder="* Naam" type="" name="">
+                </div>
+                <div id="input-field">
+                    <input placeholder="Bedrijf" type="" name="">
+                </div>
+                <div id="input-field">
+                    <input placeholder="* Email" type="" name="">
+                </div>
+                <div id="input-field">
+                    <input placeholder="* Onderwerp" type="" name="">
+                </div>
+                <div id="input-field-message">
+                    <textarea placeholder="* Bericht" id="bericht" name=""></textarea>
+                </div>
+                <div id="send-btn">
+                    Verstuur
+                </div>
+                <p id="verplicht">* is verplicht</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$("input").on('blur', function () {
+    if ($(this).val()) {
+        $(this).css("borderLeft", "5px lightgreen solid");
+    }
+    else {
+        $(this).css("borderLeft", "0px  solid");
+    }
+});
+
+	</script>
+</body>
+
+</html>
